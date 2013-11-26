@@ -9,19 +9,15 @@ Window {
     visible: true
 
     Component.onCompleted: {
-        showFullScreen();
+        showFullScreen()
     }
-
-    onWidthChanged: {
-        console.log("width is: " + width);
-    }
-
-    color: "red"
 
     property bool doLoad : false
 
     Loader {
         id: gameLoader
+        asynchronous: true
+        visible: status == Loader.Ready
         anchors.fill: parent
     }
 
@@ -38,19 +34,9 @@ Window {
         onLevelLoaded: unlock();
     }
 
-    Connections {
-        id: splashConnection
-        target: splashLoader.item
-        onTimeout: unlock();
-    }
-
     function unlock() {
-        if (doLoad) {
-            splashLoader.source = "";
-            gameConnection.target = null;
-            splashConnection.target = null;
-        }
-
+        splashLoader.source = "";
+        gameConnection.target = null;
         doLoad = true;
     }
 

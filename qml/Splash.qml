@@ -45,10 +45,10 @@ Item {
     id: splash
     signal timeout();
 
-    MouseArea {
-        // block mouse events
-        anchors.fill: parent
-    }
+//    MouseArea {
+//        // block mouse events
+//        anchors.fill: parent
+//    }
 
     Image {
         source: "images/splash/background.png"
@@ -61,9 +61,9 @@ Item {
         anchors.horizontalCenter: parent.horizontalCenter
     }
 
-    Timer {
-        running: true
-        interval: 1500
-        onTriggered: splash.timeout();
-    }
+//    Timer {
+//        running: true
+//        interval: 1500
+//        onTriggered: splash.timeout();
+//    }
 }

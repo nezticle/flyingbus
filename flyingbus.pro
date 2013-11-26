@@ -5,9 +5,6 @@ QTPLUGIN += qtaudio_coreaudio qsqlite
 SOURCES += \
     main.cpp
 
-RESOURCES += \
-    resources.qrc
-
 OTHER_FILES += \
     qml/MainView.qml \
     qml/engine.js \
@@ -44,3 +41,7 @@ OTHER_FILES += \
     qml/levels/2.xml \
     qml/levels/3.xml \
     qml/BasicSprite.qml
+
+osx: assets.path = Contents/MacOS/
+assets.files = $$PWD/qml
+QMAKE_BUNDLE_DATA += assets
