@@ -88,7 +88,7 @@ function startGame(doRun)
             // create sprite element (bonus or enemy)
             object = createObject("sprites/" + info.name + ".qml", foreground);
 
-            if (object != null) {
+            if (object !== null) {
                 object.x = info.x;
                 object.y = canvas.height - info.y;
                 sprites.push(object);
@@ -119,24 +119,24 @@ function reset()
 
     for (var i = 0; i < sprites.length; i++) {
         obj = sprites[i];
-        if (obj != null) {
+        if (obj !== null) {
             obj.visible = false;
-            obj.source = ""; // workaround to avoid leak
-            //obj.destroy(1000);
+            obj.destroy();
+            obj = null;
         }
     }
 
     for (var i = 0; i < backgroundItems.length; i++) {
         obj = backgroundItems[i];
-        if (obj != null) {
+        if (obj !== null) {
             obj.visible = false;
-            obj.source = ""; // workaround to avoid leak
-            //obj.destroy(1000);
+            obj.destroy();
+            obj = null;
         }
     }
 
-    sprites.splice(0);
-    backgroundItems.splice(0);
+    sprites = [];
+    backgroundItems = [];
 }
 
 /*
@@ -162,7 +162,7 @@ function createObject(name, parent)
 
     var object = component.createObject(parent);
 
-    if (object == null) {
+    if (object === null) {
         console.log("error creating object for: " + name);
         console.log(component.errorString());
         return null;
@@ -207,7 +207,7 @@ function advanceSprites()
     for (var i = 0; i < sprites.length; i++) {
         var obj = sprites[i]
 
-        if (obj == null)
+        if (obj === null)
             continue;
 
         if (obj.x + obj.width < 0) {
@@ -303,7 +303,7 @@ function checkGameEnd()
 function loadLevel(level)
 {
     if (level >= 0 && level < levelFiles.length) {
-        if (currentLevel == level) {
+        if (currentLevel === level) {
             Engine.startGame(true);
         } else {
             currentLevel = level;
@@ -347,7 +347,9 @@ function restartGame()
 // Load the next level
 function gotoNextLevel()
 {
+    // if it's playing, just resume
     loadLevel(currentLevel + 1);
+
 }
 
 // Load score database
