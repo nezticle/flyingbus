@@ -304,7 +304,7 @@ function loadLevel(level)
 {
     if (level >= 0 && level < levelFiles.length) {
         if (currentLevel === level) {
-            Engine.startGame(true);
+            startGame(true);
         } else {
             currentLevel = level;
             levelModel.source = levelFiles[level];
