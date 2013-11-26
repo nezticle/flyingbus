@@ -81,7 +81,10 @@ Item {
         highScore: screen.highScore
 
         onMenuClicked: menu.state = "default";
-        onNextLevelClicked: menu.nextLevelClicked();
+        onNextLevelClicked:  {
+            menu.nextLevelClicked();
+            visible = false;
+        }
     }
 
     YouWinMenu {
