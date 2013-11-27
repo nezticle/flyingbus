@@ -35,15 +35,11 @@
 ****************************************************************************/
 
 import QtQuick 2.2
+import QtMultimedia 5.0
 
 Item {
     id: splash
     signal timeout();
-
-//    MouseArea {
-//        // block mouse events
-//        anchors.fill: parent
-//    }
 
     Image {
         source: "images/splash/background.png"
@@ -56,9 +52,14 @@ Item {
         anchors.horizontalCenter: parent.horizontalCenter
     }
 
-//    Timer {
-//        running: true
-//        interval: 1500
-//        onTriggered: splash.timeout();
-//    }
+    //This to initialize the sound system early to
+    //prevent high CPU load on the first sound that
+    //gets played
+    SoundEffect {
+        id: splashSound
+        source: "sounds/empty.wav"
+    }
+    Component.onCompleted: {
+        splashSound.play();
+    }
 }
