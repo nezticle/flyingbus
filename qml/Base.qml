@@ -66,7 +66,7 @@ Item {
         property real sceneX: 0.0
         property real sceneY: Math.min(player.balloonTop, 0)
         property real sceneWidth: 0.0
-        property real sceneHeight: canvas.height * 6.0
+        property real sceneHeight: player.balloonStep * 6.0;
 
         Background {
             id: background

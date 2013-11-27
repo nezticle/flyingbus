@@ -11,6 +11,26 @@
     <name>Cloud</name>
   </object>
   <object>
+    <x>1200</x>
+    <y>960</y>
+    <name>Cloud</name>
+  </object>
+  <object>
+    <x>2370</x>
+    <y>800</y>
+    <name>Cloud</name>
+  </object>
+  <object>
+    <x>3500</x>
+    <y>960</y>
+    <name>Cloud</name>
+  </object>
+  <object>
+    <x>4500</x>
+    <y>960</y>
+    <name>Cloud</name>
+  </object>
+  <object>
     <x>880</x>
     <y>508</y>
     <name>LadyBug</name>
@@ -80,6 +100,11 @@
   </object>
   <object>
     <x>2744</x>
+    <y>86</y>
+    <name>Stone</name>
+  </object>
+  <object>
+    <x>5000</x>
     <y>86</y>
     <name>Stone</name>
   </object>
