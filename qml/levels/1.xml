@@ -31,6 +31,11 @@
     <name>Cloud</name>
   </object>
   <object>
+    <x>4900</x>
+    <y>800</y>
+    <name>Cloud</name>
+  </object>
+  <object>
     <x>880</x>
     <y>508</y>
     <name>LadyBug</name>
@@ -104,9 +109,76 @@
     <name>Stone</name>
   </object>
   <object>
+    <x>3500</x>
+    <y>86</y>
+    <name>Stone</name>
+  </object>
+  <object>
+    <x>4000</x>
+    <y>86</y>
+    <name>Stone</name>
+  </object>
+  <object>
+    <x>4100</x>
+    <y>86</y>
+    <name>Stone</name>
+  </object>
+  <object>
+    <x>4600</x>
+    <y>86</y>
+    <name>Stone</name>
+  </object>
+  <object>
     <x>5000</x>
     <y>86</y>
     <name>Stone</name>
+  </object>
+
+  <object>
+    <x>3200</x>
+    <y>320</y>
+    <name>Balloon</name>
+  </object>
+  <object>
+    <x>3320</x>
+    <y>480</y>
+    <name>Balloon</name>
+  </object>
+  <object>
+    <x>2640</x>
+    <y>470</y>
+    <name>Peace</name>
+  </object>
+  <object>
+    <x>3440</x>
+    <y>640</y>
+    <name>Balloon</name>
+  </object>
+
+  <object>
+    <x>5000</x>
+    <y>640</y>
+    <name>LadyBug</name>
+  </object>
+  <object>
+    <x>3600</x>
+    <y>640</y>
+    <name>Peace</name>
+  </object>
+  <object>
+    <x>4500</x>
+    <y>640</y>
+    <name>LadyBug</name>
+  </object>
+  <object>
+    <x>4000</x>
+    <y>320</y>
+    <name>Peace</name>
+  </object>
+  <object>
+    <x>5000</x>
+    <y>320</y>
+    <name>LadyBug</name>
   </object>
 
   <object>
