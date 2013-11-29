@@ -47,6 +47,9 @@ FrameSprite {
     rightOffset: 16
     bottomOffset: 18
 
+    height: 97
+    width: 96
+
     frameImages: [
         "images/sprites/elements/ladybug1.png",
         "images/sprites/elements/ladybug2.png",

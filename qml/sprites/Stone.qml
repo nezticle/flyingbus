@@ -44,5 +44,8 @@ BasicSprite {
     rightOffset: 8
     bottomOffset: 8
 
+    width: 96
+    height: 80
+
     source: "../images/sprites/elements/stone.png"
 }

@@ -45,5 +45,7 @@ BasicSprite {
     rightOffset: 4
     bottomOffset: 30
 
+    height: 127
+    width: 99
     source: "../images/sprites/elements/balloon.png"
 }

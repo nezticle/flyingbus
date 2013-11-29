@@ -44,5 +44,8 @@ BasicSprite {
     rightOffset: 64
     bottomOffset: 4
 
+    width: 165
+    height: 165
+
     source: "../images/sprites/elements/tree1.png"
 }

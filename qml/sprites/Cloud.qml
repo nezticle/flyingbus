@@ -44,6 +44,9 @@ FrameSprite {
     rightOffset: 34
     bottomOffset: 4
 
+    height: 101
+    width: 105
+
     property int interval : 40
     property bool flash : false
 

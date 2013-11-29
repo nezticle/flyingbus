@@ -44,6 +44,9 @@ FrameSprite {
     rightOffset: 34
     bottomOffset: 4
 
+    width: 144
+    height: 81
+
     frameImages: [
         "images/sprites/elements/peace1.png",
         "images/sprites/elements/peace2.png",

@@ -47,6 +47,9 @@ FrameSprite {
     rightOffset: 4
     bottomOffset: 8
 
+    height: 97
+    width: 111
+
     frameImages: [
         "images/sprites/elements/bird1.png",
         "images/sprites/elements/bird2.png",
