@@ -45,7 +45,7 @@ Window {
     visible: true
 
     Component.onCompleted: {
-        if (Qt.platform.os === "ios")
+        if (Qt.platform.os === "ios" || Qt.platform.os === "android")
             showFullScreen();
     }
 

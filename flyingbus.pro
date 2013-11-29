@@ -1,4 +1,6 @@
-QT += quick qml multimedia
+TARGET = Flyingbus
+
+QT += quick qml multimedia xmlpatterns sql
 
 QTPLUGIN += qtaudio_coreaudio qsqlite
 
@@ -40,8 +42,18 @@ OTHER_FILES += \
     qml/levels/1.xml \
     qml/levels/2.xml \
     qml/levels/3.xml \
-    qml/BasicSprite.qml
+    qml/BasicSprite.qml \
+    android/AndroidManifest.xml
+
+assets.files = $$PWD/qml
 
 osx: assets.path = Contents/MacOS/
-assets.files = $$PWD/qml
-QMAKE_BUNDLE_DATA += assets
+mac: QMAKE_BUNDLE_DATA += assets
+android {
+    assets.path = /assets/
+    INSTALLS += assets
+}
+
+ANDROID_EXTRA_LIBS = ../../Apps/Qt5.2.0/5.2.0-rc1/android_armv7/qml/QtQuick/XmlListModel/libqmlxmllistmodelplugin.so ../../Apps/Qt5.2.0/5.2.0-rc1/android_armv7/qml/QtQuick/LocalStorage/libqmllocalstorageplugin.so
+
+ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android

@@ -41,8 +41,14 @@
 int main(int argc, char* argv[])
 {
     QGuiApplication application(argc, argv);
-    //QQmlApplicationEngine engine(QUrl("qrc:///qml/MainView.qml"));
-    QQmlApplicationEngine engine(QUrl("qml/MainView.qml"));
+
+#if defined(Q_OS_ANDROID)
+    QUrl mainViewUrl("assets:/qml/MainView.qml");
+#else
+    QUrl mainViewUrl("qml/MainView.qml");
+#endif
+
+    QQmlApplicationEngine engine(mainViewUrl);
 
     return application.exec();
 }
