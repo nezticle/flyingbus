@@ -44,11 +44,15 @@ Item {
     Image {
         x: 390
         y: 138
+        width: 88
+        height: 93
         source: "images/menu/details.png"
     }
     Button {
         x: 86
         y: 116
+        width: 292
+        height: 161
         normalImage: "images/menu/button/play.png"
         pressedImage: "images/menu/button/play_pressed.png"
         onClicked: playClicked();
@@ -58,6 +62,8 @@ Item {
 //        y: 90
         x: 416
         y: 150
+        width: 94
+        height: 53
         normalImage: "images/menu/button/help.png"
         pressedImage: "images/menu/button/help_pressed.png"
         onClicked: helpClicked();

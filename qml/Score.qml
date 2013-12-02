@@ -47,7 +47,7 @@ Item {
 
         Text {
             text: score.value
-            font.family: "Nokia Sans"
+            font.family: "Sans"
             font.pixelSize: 42
             font.bold: true
             color: "#693d3f"
@@ -66,6 +66,8 @@ Item {
         Repeater {
             model: life
             Image {
+                width: 54
+                height: 45
                 source: "images/life.png"
             }
         }

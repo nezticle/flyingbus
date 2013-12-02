@@ -116,6 +116,8 @@ Item {
 
     Button {
         id: pauseButton
+        width: 88
+        height: 72
         visible: false
         anchors.top: parent.top
         anchors.right: parent.right

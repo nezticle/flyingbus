@@ -46,30 +46,40 @@ Item {
     Image {
         x: 140
         y: 220
+        width: 8
+        height: 8
         source: "images/menu/dot.png"
     }
 
     Image {
         x: 240
         y: 208
+        width: 8
+        height: 8
         source: "images/menu/dot.png"
     }
 
     Image {
         x: 100
         y: 230
+        width: 82
+        height: 29
         source: "images/menu/yourscore.png"
     }
 
     Image {
         x: 198
         y: 240
+        width: 10
+        height: 35
         source: "images/menu/menu_div.png"
     }
 
     Image {
         x: 220
         y: 215
+        width: 77
+        height: 29
         source: "images/menu/highscore.png"
     }
 
@@ -95,11 +105,15 @@ Item {
         Image {
             x: 40
             y: -16
+            width: 8
+            height: 8
             source: "images/menu/dot.png"
         }
 
         Button {
             smooth: true
+            width: 110
+            height: 57
             normalImage: "images/menu/button/menu.png"
             pressedImage: "images/menu/button/menu_pressed.png"
             onClicked: menuClicked();

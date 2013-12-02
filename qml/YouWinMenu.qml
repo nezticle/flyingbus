@@ -43,12 +43,16 @@ ScoreMenu {
         x: 5
         y: -30
         z: -1
+        width: 634
+        height: 429
         source: "images/menu/menu_youwin.png"
     }
 
     Button {
         x: 90
         y: 90
+        width: 441
+        height: 128
         normalImage: "images/menu/button/restart.png"
         pressedImage: "images/menu/button/restart_pressed.png"
         onClicked: restartClicked()

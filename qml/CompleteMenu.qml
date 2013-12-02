@@ -42,12 +42,16 @@ ScoreMenu {
     Image {
         x: 140
         y: 21
+        width: 319
+        height: 83
         source: "images/menu/complete_title.png"
     }
 
     Button {
         x: 90
         y: 90
+        width: 435
+        height: 131
         normalImage: "images/menu/button/next_level.png"
         pressedImage: "images/menu/button/next_level_pressed.png"
         onClicked: nextLevelClicked();

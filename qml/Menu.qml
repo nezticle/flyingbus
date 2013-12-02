@@ -51,6 +51,8 @@ Item {
     Image {
         id: background
         source: "images/menu/menu.png"
+        width: 634
+        height: 398
     }
 
     PlayMenu {

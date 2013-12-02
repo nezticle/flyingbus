@@ -40,6 +40,9 @@ Image {
     id: about
     source: "images/menu/about.png"
 
+    width: 411
+    height: 187
+
     signal clicked();
 
     MouseArea {

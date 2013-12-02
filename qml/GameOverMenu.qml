@@ -43,12 +43,16 @@ ScoreMenu {
 
     Image {
         z: -1
+        width: 634
+        height: 398
         source: "images/menu/menu_gameover.png"
     }
 
     Button {
         x: 80
         y: 100
+        width: 259
+        height: 123
         normalImage: "images/menu/button/retry.png"
         pressedImage: "images/menu/button/retry_pressed.png"
         onClicked: retryClicked();
