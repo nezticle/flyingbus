@@ -36,30 +36,21 @@
 
 import QtQuick 2.2
 
-Row {
+Item {
     id: label
     property int value
 
-    spacing: 2
-
-    Component {
-        id: digitComponent
-        Image { smooth: true; }
-    }
-
-    onValueChanged: {
-        var digits = label.children;
-        for (var i = 0; i < digits.length; i++)
-            digits[i].destroy();
-
-        if (digitComponent.status != Component.Ready)
-            return;
-
-        var str = value.toString();
-        for (var i = 0; i < str.length; i++) {
-            var object = digitComponent.createObject(label);
-            var symbol = (str[i] == "-") ? "minus" : str[i];
-            object.source = "images/digits/" + symbol + ".png";
-        }
+    Text {
+        id: valueLabel
+        anchors.fill: parent
+        text: value
+        font.family: "sans serif"
+        font.pixelSize: 42
+        font.bold: true
+        color: "#693d3f"
+        style: Text.Raised
+        styleColor: "#F8ECC955"
+        verticalAlignment: Text.AlignVCenter
+        horizontalAlignment: Text.AlignHCenter
     }
 }

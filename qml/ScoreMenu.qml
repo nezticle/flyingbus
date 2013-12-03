@@ -83,18 +83,30 @@ Item {
         source: "images/menu/highscore.png"
     }
 
-    DigitLabel {
-        x: 100
-        y: 268
-        rotation: -7
-        value: playerScore
-    }
+    Item {
+        id: digitLabels
+        rotation: -8.5
+        x: 90
+        y: 247
 
-    DigitLabel {
-        x: 220
-        y: 251
-        rotation: -7
-        value: highScore
+        height: 50
+        width: 230
+
+        DigitLabel {
+            id: playerScoreLabel
+            width: 105
+            height: 50
+            value: playerScore
+            anchors.left: parent.left
+        }
+
+        DigitLabel {
+            id: highScoreLabel
+            width: 105
+            height: 50
+            value: highScore
+            anchors.right: parent.right
+        }
     }
 
     Item {
