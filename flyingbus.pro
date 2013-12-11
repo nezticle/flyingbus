@@ -48,7 +48,10 @@ OTHER_FILES += \
 assets.files = $$PWD/qml
 
 osx: assets.path = Contents/MacOS/
-mac: QMAKE_BUNDLE_DATA += assets
+mac: {
+    QMAKE_BUNDLE_DATA += assets
+    QMAKE_TARGET_BUNDLE_PREFIX = "com.digia.qt.iosteam"
+}
 android {
     assets.path = /assets/
     INSTALLS += assets
